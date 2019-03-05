@@ -1,0 +1,171 @@
+@charset "UTF-8";
+/*Generellt*/
+.link {
+  text-decoration: none;
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+.dark--text {
+  color: #544948;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.relative {
+  position: relative;
+}
+
+.large-btn-80 {
+  width: 80%;
+}
+
+.large-btn-60 {
+  width: 70% !important;
+}
+
+.img-border {
+  border: 10px solid white;
+}
+
+/*Färger*/
+.main-bg {
+  background-color: #D4B7B5;
+}
+
+.light-bg {
+  background-color: #FAEFEE;
+}
+
+.main-light-bg {
+  background-color: #EADCDB;
+}
+
+.main-dark-bg {
+  background-color: #94807F;
+}
+
+.dark-bg {
+  background-color: #544948;
+}
+
+.gray-bg {
+  background-color: #e9e7e7;
+}
+
+/*Hero*/
+.hero-pic-on-top {
+  position: absolute;
+  bottom: -50px;
+  right: 0px;
+  z-index: 2;
+}
+
+/*intro-card*/
+.intro-card_title {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px;
+  background-color: #EADCDB;
+}
+
+.intro-card_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  z-index: 2;
+  top: -35px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.intro-card_img {
+  height: auto;
+  width: 100%;
+}
+
+.intro-card_border {
+  border: 10px solid white;
+}
+
+.intro-card:hover {
+  background-color: #D4B7B5;
+  -webkit-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
+}
+
+.text-dark-bg {
+  background-color: #544948;
+  padding: 2px 30px;
+}
+
+/*About*/
+/*sellingpoint*/
+.selling-img {
+  height: 400px;
+}
+
+/*Gallery*/
+.earlier-work {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: 1200px) {
+  .hero-text {
+    padding-left: 40px;
+  }
+  .hero-pic-under {
+    position: absolute;
+    /* left:5%; */
+    z-index: 1;
+  }
+  .hero-pic-on-top {
+    position: absolute;
+    bottom: -50px;
+    right: 100px;
+    z-index: 2;
+  }
+}
+
+@media (min-width: 960px) {
+  .hero-text {
+    padding-left: 40px;
+  }
+  .hero-pic-under {
+    position: absolute;
+    /* left:5%; */
+    z-index: 1;
+  }
+  .hero-pic-on-top {
+    position: absolute;
+    bottom: -50px;
+    right: 0;
+    z-index: 2;
+  }
+}
+
+@media (max-width: 960px) {
+  .hero-pic-under {
+    position: absolute;
+    left: 5%;
+    z-index: 1;
+  }
+  .hero-pic-on-top {
+    position: absolute;
+    bottom: -50px;
+    right: 5%;
+    z-index: 2;
+  }
+}
+/*# sourceMappingURL=style.css.map */

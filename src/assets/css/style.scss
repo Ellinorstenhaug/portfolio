@@ -1,0 +1,183 @@
+$light-color: #FAEFEE;
+$main-color-light:#EADCDB;
+$main-color: #D4B7B5;
+$main-color-dark: #94807F;
+$dark-color:#544948;
+$gray-color: rgb(233, 231, 231);
+
+/*Generellt*/
+.link {
+    text-decoration: none;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+.dark--text {
+    color: $dark-color;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.relative {
+    position: relative;
+}
+
+.large-btn-80 {
+    width: 80%;
+}
+
+.large-btn-60 {
+    width: 70% !important;
+}
+
+.img-border {
+    border: 10px solid white;
+}
+
+/*Färger*/
+.main-bg {
+    background-color: $main-color;
+}
+.light-bg {
+    background-color: $light-color;
+}
+.main-light-bg {
+    background-color: $main-color-light;
+}
+.main-dark-bg {
+    background-color: $main-color-dark;
+
+}
+.dark-bg {
+    background-color: $dark-color;
+}
+.gray-bg {
+    background-color: $gray-color;
+}
+
+
+
+/*Hero*/
+
+.hero-pic-on-top {
+    position: absolute;
+    bottom: -50px;
+    right: 0px;
+    z-index: 2;
+}
+
+/*intro-card*/
+
+.intro-card_title {
+    justify-content: center;
+    padding: 15px;
+    background-color: $main-color-light;
+}
+
+.intro-card_box {
+    display: flex;
+    position: relative;
+    z-index: 2;
+    top: -35px;
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.intro-card_img {
+    height: auto;
+    width: 100%;
+}
+
+.intro-card_border {
+    border: 10px solid white;
+}
+
+
+.intro-card:hover {
+    background-color: $main-color;
+    -webkit-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+}
+
+.text-dark-bg {
+    background-color:$dark-color;
+    padding: 2px 30px;
+}
+
+/*About*/
+
+
+/*sellingpoint*/
+.selling-img{
+    height:400px;
+    
+}
+
+/*Gallery*/
+.earlier-work {
+    width:100%;
+    position: relative;
+    z-index: 1;
+    
+}
+
+
+
+@media (min-width: 1200px) {
+    .hero-text {
+        padding-left: 40px;
+    }
+
+    .hero-pic-under {
+        position: absolute;
+        /* left:5%; */
+        z-index: 1;
+    }
+
+    .hero-pic-on-top {
+        position: absolute;
+        bottom: -50px;
+        right: 100px;
+        z-index: 2;
+    }
+}
+
+@media (min-width: 960px) {
+    .hero-text {
+        padding-left: 40px;
+    }
+
+    .hero-pic-under {
+        position: absolute;
+        /* left:5%; */
+        z-index: 1;
+    }
+
+    .hero-pic-on-top {
+        position: absolute;
+        bottom: -50px;
+        right: 0;
+        z-index: 2;
+    }
+}
+
+@media (max-width: 960px) {
+    .hero-pic-under {
+        position: absolute;
+        left: 5%;
+        z-index: 1;
+    }
+
+    .hero-pic-on-top {
+        position: absolute;
+        bottom: -50px;
+        right: 5%;
+        z-index: 2;
+    }
+}

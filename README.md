@@ -1,4 +1,4 @@
-# my-app
+# Portfolio - Projektarbete Februari 2019
 
 ## Project setup
 ```
