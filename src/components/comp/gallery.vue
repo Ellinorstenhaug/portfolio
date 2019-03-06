@@ -1,5 +1,5 @@
 <template>
-    <section class="gallery-wrap  my-5">
+    <section class="gallery-wrap  mt-5">
         <div>
             <v-img :src="getImgUrl('earlierwork.png')" class="earlier-work">
             </v-img>
@@ -8,9 +8,9 @@
                 <!-- <h3 class="mt-5 text-uppercase display-3 font-weight-black mb-3">{{heading}}</h3> -->
 
                 <div>
-                    <v-layout row wrap justify-center class="py-5">
-                        <v-flex xs12 sm5>
-                            <div class="justify-center ml-5">
+                    <v-layout row wrap justify-center class="d-py-5">
+                        <v-flex xs12 sm6>
+                            <div class="justify-center mx-3">
                                 <v-img class="img-border elevation-2" :src="currentImg" alt=""></v-img>
                             </div>
                         </v-flex>
@@ -36,15 +36,10 @@
                             </div>
                         </v-flex>
                     </v-layout>
-
-
-    <carousel />
+                    <carousel />
                 </div>
-
             </div>
-
         </div>
-
     </section>
 </template>
 
@@ -70,5 +65,13 @@
 </script>
 
 <style>
+    .d-py-5 {
+        padding: 5% 0;
+    }
 
+    @media (max-width: 700px) {
+        .d-py-5 {
+            padding: unset unset;
+        }
+    }
 </style>
