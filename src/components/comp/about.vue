@@ -8,8 +8,8 @@
             <div class="block-top light-bg">
                 <div>
                     <v-layout row wrap justify-center align-center class="py-5">
-                        <v-flex xs12 sm11 md5 lg4>
-                            <div class="justify-center d-ml-5">
+                        <v-flex xs12 sm7 md5 lg4>
+                            <div class="justify-center d-ml-5 d-py-4">
                                 <div v-if="$vuetify.breakpoint.mdAndUp">
                                     <v-img class="img-border elevation-2 px-1" :src="aboutImg" alt=""></v-img>
                                 </div>
@@ -18,7 +18,7 @@
                                 </div>
                             </div>
                         </v-flex>
-                        <v-flex xs12s md5 offset-md1 mx-4>
+                        <v-flex xs12s sm5 md5 offset-md1 px-4>
                             <h3 class="mt-5 text-uppercase display-1 font-weight-black mb-3 ">{{heading}}</h3>
                             <!-- TODO Gör om till data?  -->
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quod sequi magni
@@ -107,6 +107,12 @@
         top: -100px;
     }
 
+@media (min-width: 1000px) {
+    .d-py-4 {
+        padding: 50px 0;
+    }
+    
+}
 
     @media (max-width: 1200px) {
         .rotate-text h3 {
