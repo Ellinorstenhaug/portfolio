@@ -199,5 +199,11 @@ mark {
     background-color: rgba(250, 239, 238, 0.6) !important;
     padding: 0px 14px;
   }
+  .display-4 {
+    font-size: 20vw !important;
+  }
+  .display-3 {
+    font-size: 14vw !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */

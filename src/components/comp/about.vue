@@ -3,7 +3,7 @@
 
         <div class="block-behind main-bg">
             <div class="rotate-text">
-                <h2 class="display-4 font-weight-bold text-uppercase about-headline"><span><mark>About</mark></span></h2>
+                <h3 class="display-4 font-weight-bold text-uppercase about-headline"><span><mark>About</mark></span></h3>
             </div>
             <div class="block-top light-bg">
                 <div>
@@ -48,7 +48,7 @@
             return {
                 heading: "Hello",
                 aboutImg: "https://picsum.photos/400/550?random",
-                mobileAboutImg: "https://picsum.photos/400/400?random"
+                mobileAboutImg: "https://picsum.photos/400/500?random"
             }
         }
     }
@@ -60,7 +60,7 @@
     }
 
 
-    .rotate-text h2 {
+    .rotate-text h3 {
         position: absolute;
         float: left;
         /* background: gray; */
@@ -71,7 +71,7 @@
         left: 3%;
     }
 
-    .rotate-text h2 span {
+    .rotate-text h3 span {
         width: 150px;
         /* same as height of .rotate-text */
         -webkit-transform-origin: 84px 70px;
@@ -136,8 +136,8 @@
         height:700px;
     }
 
-        .rotate-text h2 {
-            top: 170px;
+        .rotate-text h3 {
+            top: 130px;
             z-index: 14;
             left: -2%;
         }

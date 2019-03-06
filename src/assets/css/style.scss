@@ -216,7 +216,12 @@ mark {
 @media (max-width: 700px) {
     mark {
         background-color: $light-color-trans !important;
-        
-        padding: 0px 14px;
+                padding: 0px 14px;
+    }
+    .display-4 {
+        font-size:20vw !important;
+    }
+    .display-3 {
+        font-size: 14vw !important;
     }
 }
