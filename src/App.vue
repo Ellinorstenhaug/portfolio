@@ -1,9 +1,10 @@
 <template>
   <v-app>
-   <Nav />
+    <Nav />
     <v-content>
       <StartPage />
-      <HelloWorld />
+      <Footer />
+    <HelloWorld />
     </v-content>
   </v-app>
 </template>
@@ -11,14 +12,16 @@
 <script>
   import HelloWorld from './components/comp/HelloWorld'
   import Nav from './components/comp/services/nav'
+  import Footer from './components/comp/services/footer'
   import StartPage from './components/views/startpage'
 
   export default {
     name: 'App',
     components: {
-      HelloWorld, 
+      StartPage,
+      HelloWorld,
       Nav,
-      StartPage
+      Footer
     },
     data() {
       return {

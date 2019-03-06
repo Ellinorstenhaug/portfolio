@@ -71,7 +71,7 @@
         left: 5%;
     }
 
-    h2 span {
+   .rotate-text h2 span {
         width: 150px;
         /* same as height of .rotate-text */
         -webkit-transform-origin: 84px 70px;

@@ -30,13 +30,13 @@
         </v-container>
       </v-layout>
 
-<introText />
+      <introText />
     </section>
   </v-content>
 </template>
 
 <script>
-import introText from './childcomponents/introText'
+  import introText from './childcomponents/introText'
 
   export default {
     components: {

@@ -3,7 +3,7 @@ $main-color-light:#EADCDB;
 $main-color: #D4B7B5;
 $main-color-dark: #94807F;
 $dark-color:#544948;
-$gray-color: rgb(233, 231, 231);
+$gray-color: #e9e7e7;
 
 /*Generellt*/
 .link {
@@ -42,19 +42,24 @@ $gray-color: rgb(233, 231, 231);
 .main-bg {
     background-color: $main-color;
 }
+
 .light-bg {
     background-color: $light-color;
 }
+
 .main-light-bg {
     background-color: $main-color-light;
 }
+
 .main-dark-bg {
     background-color: $main-color-dark;
 
 }
+
 .dark-bg {
     background-color: $dark-color;
 }
+
 .gray-bg {
     background-color: $gray-color;
 }
@@ -106,7 +111,7 @@ $gray-color: rgb(233, 231, 231);
 }
 
 .text-dark-bg {
-    background-color:$dark-color;
+    background-color: $dark-color;
     padding: 2px 30px;
 }
 
@@ -114,17 +119,39 @@ $gray-color: rgb(233, 231, 231);
 
 
 /*sellingpoint*/
-.selling-img{
-    height:400px;
-    
+.selling-img {
+    height: 400px;
+
 }
 
 /*Gallery*/
 .earlier-work {
-    width:100%;
+    width: 100%;
+}
+
+.gallery-container {
+    width: 100%;
+    height: auto;
+    /* background-color: green; */
     position: relative;
-    z-index: 1;
-    
+    // background-color: $;
+    top: -60px;
+    z-index: 4;
+    left: 0;
+
+    h2 span{
+        position: relative;
+        top: -60px;
+    }
+}
+
+
+.gallery-wrap {
+    /* padding: 30px; */
+    height: auto;
+    margin: 200px 0 !important;
+    position: relative;
+    /* z-index: 3; */
 }
 
 

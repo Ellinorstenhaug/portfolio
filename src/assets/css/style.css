@@ -117,8 +117,29 @@
 /*Gallery*/
 .earlier-work {
   width: 100%;
+}
+
+.gallery-container {
+  width: 100%;
+  height: auto;
+  /* background-color: green; */
   position: relative;
-  z-index: 1;
+  top: -60px;
+  z-index: 4;
+  left: 0;
+}
+
+.gallery-container h2 span {
+  position: relative;
+  top: -60px;
+}
+
+.gallery-wrap {
+  /* padding: 30px; */
+  height: auto;
+  margin: 200px 0 !important;
+  position: relative;
+  /* z-index: 3; */
 }
 
 @media (min-width: 1200px) {
