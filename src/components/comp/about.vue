@@ -1,39 +1,41 @@
 <template>
-    <section class="py-5 my-5">
-        <div class="about-wrapper">
-            <div class="about-wrapper">
-                <div class="rotate-text">
-                    <h2 class="display-4 font-weight-bold text-uppercase about-headline"><span>About</span></h2>
-                </div>
+    <section class="py-5 my-5 about-wrapper">
+
+        <div class="block-behind main-bg">
+            <div class="rotate-text">
+                <h2 class="display-4 font-weight-bold text-uppercase about-headline"><span><mark>About</mark></span></h2>
             </div>
-
-            <div class="block-behind main-bg">
-                <div class="block-top light-bg">
-                    <div>
-                        <v-layout row wrap justify-center class="py-5">
-                            <v-flex xs12 sm5>
-                                <div class="justify-center ml-5">
-                                    <v-img class="img-border elevation-2" :src="aboutImg" alt=""></v-img>
+            <div class="block-top light-bg">
+                <div>
+                    <v-layout row wrap justify-center align-center class="py-5">
+                        <v-flex xs12 sm11 md5 lg4>
+                            <div class="justify-center d-ml-5">
+                                <div v-if="$vuetify.breakpoint.mdAndUp">
+                                    <v-img class="img-border elevation-2 px-1" :src="aboutImg" alt=""></v-img>
                                 </div>
-                            </v-flex>
-                            <v-flex xs12s sm5 offset-sm1 py-5>
-                                <h3 class="mt-5 text-uppercase display-1 font-weight-black mb-3">{{heading}}</h3>
-
-                                <!-- TODO Gör om till data?  -->
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quod sequi magni
-                                    porro maxime nulla alias perferendis dolore dolorum voluptate, quis et! Recusandae
-                                    dolore explicabo eius? Eos eveniet dolorem deserunt tempore illo hic, optio ratione
-                                    saepe a excepturi id architecto?</p>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta necessitatibus, et tempore fugiat alias voluptate veritatis iusto expedita esse nulla repudiandae molestiae. Minus est placeat mollitia aspernatur soluta laborum velit.</p>
-                                <div class="justify-center button-wrap"> 
-                                    <!-- TODO centrera knapp-->
-                                    <v-btn class="lighten-2 mt-3 px-5 py-4 large-btn-80 about-btn" dark large href="#">
-                                        CV & PL
-                                    </v-btn>
+                                <div v-if="$vuetify.breakpoint.smAndDown">
+                                    <v-img class="m-about-pic img-border elevation-2 mx-4" :src="mobileAboutImg" alt=""></v-img>
                                 </div>
-                            </v-flex>
-                        </v-layout>
-                    </div>
+                            </div>
+                        </v-flex>
+                        <v-flex xs12s md5 offset-md1 mx-4>
+                            <h3 class="mt-5 text-uppercase display-1 font-weight-black mb-3 ">{{heading}}</h3>
+                            <!-- TODO Gör om till data?  -->
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quod sequi magni
+                                porro maxime nulla alias perferendis dolore dolorum voluptate, quis et! Recusandae
+                                dolore explicabo eius? Eos eveniet dolorem deserunt tempore illo hic, optio ratione
+                                saepe a excepturi id architecto?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta necessitatibus, et
+                                tempore fugiat alias voluptate veritatis iusto expedita esse nulla repudiandae
+                                molestiae. Minus est placeat mollitia aspernatur soluta laborum velit.</p>
+                            <div class="justify-center button-wrap">
+                                <!-- TODO centrera knapp-->
+                                <v-btn class="lighten-2 mt-3 px-5 py-4 about-btn" dark block large href="#">
+                                    CV & PL
+                                </v-btn>
+                            </div>
+                        </v-flex>
+                    </v-layout>
                 </div>
             </div>
         </div>
@@ -45,7 +47,8 @@
         data: function () {
             return {
                 heading: "Hello",
-                aboutImg: "https://picsum.photos/400/600?random"
+                aboutImg: "https://picsum.photos/400/550?random",
+                mobileAboutImg: "https://picsum.photos/400/400?random"
             }
         }
     }
@@ -56,22 +59,19 @@
         width: 100%;
     }
 
-    .about-wrapper {
-        height: 500px;
-    }
 
     .rotate-text h2 {
-        position: relative;
+        position: absolute;
         float: left;
         /* background: gray; */
         /* width: 50px; */
         height: auto;
         top: 250px;
         z-index: 4;
-        left: 5%;
+        left: 3%;
     }
 
-   .rotate-text h2 span {
+    .rotate-text h2 span {
         width: 150px;
         /* same as height of .rotate-text */
         -webkit-transform-origin: 84px 70px;
@@ -86,14 +86,15 @@
     .about-wrapper {
         margin-top: 30px;
         width: 100%;
-        height: auto;
+        min-height: auto;
+        position: relative;
     }
+
 
     .block-behind {
         width: 100%;
         height: 500px;
-        /* position: relative;
-        z-index: 1; */
+        /* z-index: 1; */
     }
 
     .block-top {
@@ -105,6 +106,7 @@
         margin: 0 auto;
         top: -100px;
     }
+
 
     @media (max-width: 1200px) {
         .rotate-text h2 {
@@ -130,5 +132,15 @@
         .about-headline {
             font-size: 5em !important;
         }
+    .block-behind {
+        height:700px;
+    }
+
+        .rotate-text h2 {
+            top: 170px;
+            z-index: 14;
+            left: -2%;
+        }
+
     }
 </style>

@@ -1,4 +1,5 @@
 $light-color: #FAEFEE;
+$light-color-trans: rgba(250, 239, 238, 0.6);
 $main-color-light:#EADCDB;
 $main-color: #D4B7B5;
 $main-color-dark: #94807F;
@@ -8,6 +9,10 @@ $gray-color: #e9e7e7;
 /*Generellt*/
 .link {
     text-decoration: none;
+}
+
+mark {
+    background-color: transparent !important;
 }
 
 .text-align-left {
@@ -95,7 +100,7 @@ $gray-color: #e9e7e7;
 
 .intro-card_img {
     height: auto;
-    width: 100%;
+    width: 100% !important;
 }
 
 .intro-card_border {
@@ -139,7 +144,7 @@ $gray-color: #e9e7e7;
     z-index: 4;
     left: 0;
 
-    h2 span{
+    h2 span {
         position: relative;
         top: -60px;
     }
@@ -206,5 +211,12 @@ $gray-color: #e9e7e7;
         bottom: -50px;
         right: 5%;
         z-index: 2;
+    }
+}
+@media (max-width: 700px) {
+    mark {
+        background-color: $light-color-trans !important;
+        
+        padding: 0px 14px;
     }
 }

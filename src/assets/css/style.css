@@ -4,6 +4,10 @@
   text-decoration: none;
 }
 
+mark {
+  background-color: transparent !important;
+}
+
 .text-align-left {
   text-align: left;
 }
@@ -90,7 +94,7 @@
 
 .intro-card_img {
   height: auto;
-  width: 100%;
+  width: 100% !important;
 }
 
 .intro-card_border {
@@ -187,6 +191,13 @@
     bottom: -50px;
     right: 5%;
     z-index: 2;
+  }
+}
+
+@media (max-width: 700px) {
+  mark {
+    background-color: rgba(250, 239, 238, 0.6) !important;
+    padding: 0px 14px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -2,7 +2,7 @@
   <div>
 
 
-    <section>
+    <!-- <section>
       <v-container grid-list-xl>
         <v-layout row wrap justify-center class="my-5">
           <v-flex xs12 sm4>
@@ -55,8 +55,8 @@
           </v-flex>
         </v-layout>
       </v-container>
-    </section>
-
+    </section> -->
+<!-- 
     <v-footer class="blue darken-2">
       <v-layout row wrap align-center>
         <v-flex xs12>
@@ -68,7 +68,7 @@
           </div>
         </v-flex>
       </v-layout>
-    </v-footer>
+    </v-footer> -->
   </div>
 </template>
 

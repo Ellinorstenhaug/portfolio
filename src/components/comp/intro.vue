@@ -4,7 +4,7 @@
       <v-layout column wrap class="my-5" align-center>
         <v-flex xs12 sm4 class="my-3">
           <div class="text-xs-center">
-            <h2 class="headline">HEEEJ</h2>
+            <h2 class="display-2 font-weight-bold">HEEEJ</h2>
             <span class="subheading">
               Cras facilisis mi vitae nunc
             </span>
@@ -12,10 +12,10 @@
         </v-flex>
         <v-container grid-list-xl>
           <v-layout row wrap align-center>
-            <v-flex xs12 md4 v-for="(item, index) in card" :key="index">
+            <v-flex xs12 sm6 md4 v-for="(item, index) in card" :key="index">
               <v-hover>
 
-                <v-card flat slot-scope="{ hover }" :class="`elevation-${hover ? 12 : 2}`" class="mx-auto" width="344">
+                <v-card flat slot-scope="{ hover }" :class="`elevation-${hover ? 12 : 2}`" class="mx-auto">
                   <v-img :src="item.img" class="intro-card_img intro-card_border elevation-2">
                   </v-img>
                 </v-card>
