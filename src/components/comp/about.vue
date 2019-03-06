@@ -48,7 +48,7 @@
             return {
                 heading: "Hello",
                 aboutImg: "https://picsum.photos/400/550?random",
-                mobileAboutImg: "https://picsum.photos/400/500?random"
+                mobileAboutImg: "https://picsum.photos/400/550?random"
             }
         }
     }
@@ -66,9 +66,9 @@
         /* background: gray; */
         /* width: 50px; */
         height: auto;
-        top: 250px;
+        top: 300px;
         z-index: 4;
-        left: 3%;
+        left: 3.5%;
     }
 
     .rotate-text h3 span {
@@ -109,38 +109,55 @@
 
 
     @media (max-width: 1200px) {
-        .rotate-text h2 {
-            top: 250px;
+        .rotate-text h3 {
+            top: 300px;
             left: 2%;
         }
     }
 
     @media (max-width: 900px) {
-        .rotate-text h2 {
-            top: 250px;
+        .rotate-text h3 {
+            top: 300px;
             left: 0px;
         }
 
     }
 
     @media (max-width: 700px) {
-        .rotate-text h2 {
-            top: 200px;
-            left: 0px;
-        }
+     
 
         .about-headline {
             font-size: 5em !important;
         }
-    .block-behind {
-        height:700px;
-    }
+
+        .block-behind {
+            height: 700px;
+        }
 
         .rotate-text h3 {
-            top: 130px;
+            top: 370px;
             z-index: 14;
             left: -2%;
         }
+    }
+    @media (max-width: 600px) {
+        .about-headline {
+            font-size: 5em !important;
+        }
 
+        .block-behind {
+            height: 700px;
+        }
+
+        .rotate-text h3 {
+            top: 230px;
+            z-index: 14;
+            left: -2%;
+        }
+    }
+    @media (max-width: 415px) {
+        .rotate-text h3 {
+            top: 120px;
+        }
     }
 </style>
