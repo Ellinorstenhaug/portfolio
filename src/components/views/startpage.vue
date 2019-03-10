@@ -5,6 +5,7 @@
         <About />
         <Gallery />
         <SellingPoint />
+        <Contact />
     </div>
 </template>
 
@@ -13,6 +14,7 @@
     import Intro from './../comp/intro'
     import About from './../comp/about'
     import Gallery from './../comp/gallery'
+    import Contact from './../comp/contact'
     import SellingPoint from './../comp/sellingpoint'
 
     export default {
@@ -21,6 +23,7 @@
             Intro,
             About,
             Gallery,
+            Contact,
             SellingPoint
         },
     }

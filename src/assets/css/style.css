@@ -8,12 +8,22 @@ mark {
   background-color: transparent !important;
 }
 
+iframe {
+  border: 10px solid white;
+  width: 100%;
+  height: 100%;
+}
+
 .text-align-left {
   text-align: left;
 }
 
 .dark--text {
   color: #544948;
+}
+
+.main-dark--text {
+  color: #94807F !important;
 }
 
 .full-width {
@@ -177,6 +187,9 @@ mark {
     bottom: -50px;
     right: 0;
     z-index: 2;
+  }
+  .d-my-5 {
+    margin: 5% 0;
   }
 }
 

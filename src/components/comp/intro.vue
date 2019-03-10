@@ -54,12 +54,12 @@
           {
             title: "Work",
             url: "/kontakt",
-            img: "https://picsum.photos/400?random"
+            img: "https://picsum.photos/400"
           },
           {
             title: "Contact",
             url: "/kontakt",
-            img: "https://picsum.photos/400?random"
+            img: "https://picsum.photos/400/?random"
           }
         ],
       };
