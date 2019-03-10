@@ -24,10 +24,7 @@
                         {{ link }}
                     </v-btn>
                 </v-flex>
-
             </v-layout>
-
-
             <v-divider></v-divider>
 
             <v-card class="white--text text-uppercase" color="#94807F">
@@ -38,8 +35,6 @@
             </v-card>
         </v-card>
     </v-footer>
-
-
 
 </template>
 
