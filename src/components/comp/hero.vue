@@ -11,8 +11,8 @@
                             <img class="img-border hero-pic-on-top" src="https://picsum.photos/g/300/400?random" alt="">
                         </v-flex>
                         <v-flex xs12 md5 xl5  class="py-5 offset-md1 hero-text">
-                            <h1 class=" display-4 text-xs-left text-align-left font-weight-bold text-uppercase">Tjenare</h1>
-                            <h3 class="mb-2 display-3 text-xs-left text-align-left font-weight-medium text-uppercase">Halli hallå</h3>
+                            <h1 class=" display-4 text-xs-left text-align-left font-weight-bold text-uppercase">{{h1}}</h1>
+                            <h3 class="mb-2 display-3 text-xs-left text-align-left font-weight-medium text-uppercase">{{h3}}</h3>
                             <v-btn class="lighten-2 mt-3 px-5 py-4 large-btn-80" dark large href="#">
                                 {{sellingButton}}
                             </v-btn>
@@ -28,8 +28,8 @@
                             <img class="img-border hero-pic-on-top" src="https://picsum.photos/g/200/300?random" alt="">
                         </v-flex>
                         <v-flex xs12 md5 xl5  class="py-5 offset-md1 hero-text">
-                            <h1 class=" display-4 text-xs-left text-align-left font-weight-bold text-uppercase">Tjenare</h1>
-                            <h3 class="mb-2 display-3 display-3-mobile text-xs-left text-align-left font-weight-medium text-uppercase">Halli hallå</h3>
+                            <h1 class=" display-4 text-xs-left text-align-left font-weight-bold text-uppercase">{{h1}}</h1>
+                            <h3 class="mb-2 display-3 display-3-mobile text-xs-left text-align-left font-weight-medium text-uppercase">{{h3}}</h3>
                             <v-btn class="lighten-2 mt-3 px-5 py-4" dark block large href="#">
                                 {{sellingButton}}
                             </v-btn>
@@ -45,15 +45,12 @@
     export default {
         data: function () {
             return {
+                h1: "Hello",
+                h3: "some nice text",
                 // introText: "Tjenare Halli hallå",
                 sellingButton: "Read More"
             };
         }
-        // methods: {
-        //     textToUpperCase: function (input) {
-        //         return (input || '').textToUpperCase();
-        //     },
-        // }
     }
 </script>
 

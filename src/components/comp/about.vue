@@ -1,6 +1,5 @@
 <template>
-    <section class="py-5 my-5 about-wrapper">
-
+    <section class="pt-5 mt-5 about-wrapper" id="about">
         <div class="block-behind main-bg">
             <div class="rotate-text">
                 <h3 class="display-4 font-weight-bold text-uppercase about-headline"><span><mark>About</mark></span></h3>

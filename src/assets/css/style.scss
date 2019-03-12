@@ -6,6 +6,19 @@ $main-color-dark: #94807F;
 $dark-color:#544948;
 $gray-color: #e9e7e7;
 
+
+#app > div > main > div > div > section:nth-child(4) > div > div.gallery-container.gray-bg > div > section > div > div > div > div > section > div.VueCarousel-wrapper > div > div {
+    padding: 10px;
+}
+// #app > div > main > div > div > section:nth-child(4) > div > div.gallery-container.gray-bg > div > section > div > div > div > div > section > div.VueCarousel-pagination > div > button {
+//     background-color:rebeccapurple !important;
+// }
+
+.paginationColor {
+    background-color:fuchsia;
+}
+
+
 /*Generellt*/
 .link {
     text-decoration: none;
@@ -17,8 +30,8 @@ mark {
 
 iframe {
     border: 10px solid white;
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
 
 }
 
@@ -29,6 +42,7 @@ iframe {
 .dark--text {
     color: $dark-color;
 }
+
 .main-dark--text {
     color: $main-color-dark !important;
 }
@@ -79,6 +93,50 @@ iframe {
     background-color: $gray-color;
 }
 
+// carousel 
+.slide-card_title {
+    justify-content: center;
+    padding: 10px;
+    background-color: white;
+    
+    &:hover {
+        background-color: $light-color;   
+    }
+    
+}
+
+.slide-card_box {
+    display: flex;
+    position: relative;
+    z-index: 7;
+    top: 22px;
+    justify-content: center;
+    width: 60%;
+    margin: 0 auto;  
+  
+}
+.carousel {
+    width: 100%;
+    
+    height: auto;
+}
+
+.slide {
+    margin-bottom:25px;
+    cursor: pointer;
+    padding: 0 15px;
+   
+  
+}
+.VueCarousel-dot-container {
+    margin-top: 0 !important ;
+}
+.VueCarousel-dot {
+    background-color:gray !important; 
+}
+.VueCarousel-dot--active {
+    background-color:black !important; 
+}
 
 
 /*Hero*/
@@ -110,7 +168,9 @@ iframe {
 
 .intro-card_img {
     height: auto;
-    width: 100% !important;
+    width: 100%;
+    // margin: 0 10px !important;
+    border:10px solid white;
 }
 
 .intro-card_border {
@@ -135,9 +195,19 @@ iframe {
 
 /*sellingpoint*/
 .selling-img {
-    height: 400px;
+    height: auto;
 
 }
+
+// contact
+.map {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
 
 /*Gallery*/
 .earlier-work {
@@ -153,7 +223,6 @@ iframe {
     top: -60px;
     z-index: 4;
     left: 0;
-
     h2 span {
         position: relative;
         top: -60px;

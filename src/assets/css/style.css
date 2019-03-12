@@ -1,4 +1,12 @@
 @charset "UTF-8";
+#app > div > main > div > div > section:nth-child(4) > div > div.gallery-container.gray-bg > div > section > div > div > div > div > section > div.VueCarousel-wrapper > div > div {
+  padding: 10px;
+}
+
+.paginationColor {
+  background-color: fuchsia;
+}
+
 /*Generellt*/
 .link {
   text-decoration: none;
@@ -71,6 +79,55 @@ iframe {
   background-color: #e9e7e7;
 }
 
+.slide-card_title {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+  background-color: white;
+}
+
+.slide-card_title:hover {
+  background-color: #FAEFEE;
+}
+
+.slide-card_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  z-index: 7;
+  top: 22px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.carousel {
+  width: 100%;
+  height: auto;
+}
+
+.slide {
+  margin-bottom: 25px;
+  cursor: pointer;
+  padding: 0 15px;
+}
+
+.VueCarousel-dot-container {
+  margin-top: 0 !important;
+}
+
+.VueCarousel-dot {
+  background-color: gray !important;
+}
+
+.VueCarousel-dot--active {
+  background-color: black !important;
+}
+
 /*Hero*/
 .hero-pic-on-top {
   position: absolute;
@@ -104,7 +161,8 @@ iframe {
 
 .intro-card_img {
   height: auto;
-  width: 100% !important;
+  width: 100%;
+  border: 10px solid white;
 }
 
 .intro-card_border {
@@ -125,7 +183,15 @@ iframe {
 /*About*/
 /*sellingpoint*/
 .selling-img {
-  height: 400px;
+  height: auto;
+}
+
+.map {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 /*Gallery*/
