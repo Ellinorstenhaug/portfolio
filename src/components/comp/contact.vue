@@ -34,7 +34,7 @@
                                 <div class="justify-center button-wrap">
                                     <!-- TODO centrera knapp-->
                                     <v-btn class="lighten-2 mt-3 px-5 py-4  about-btn" dark block large href="#">
-                                        CV & PL
+                                        Contact woooop
                                     </v-btn>
                                 </div>
                             </v-card>

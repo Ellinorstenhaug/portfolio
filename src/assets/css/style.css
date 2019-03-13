@@ -222,6 +222,96 @@ iframe {
   /* z-index: 3; */
 }
 
+.nav_icon-btn {
+  padding: 0 0 !important;
+}
+
+.nav-btn {
+  height: 100%;
+  font-size: 1em !important;
+}
+
+.top {
+  z-index: 999 !important;
+}
+
+.menu-headings {
+  position: relative;
+  right: 0;
+}
+
+.bm-menu {
+  z-index: 1001;
+  padding: 0 !important;
+  background-color: #e9e7e7;
+  -webkit-box-shadow: 0 0 10px rgba(148, 128, 127, 0.582);
+          box-shadow: 0 0 10px rgba(148, 128, 127, 0.582);
+}
+
+.bm-burger-button {
+  z-index: 1000;
+  height: 20px;
+  width: 26px;
+  position: fixed !important;
+  right: 20px !important;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 15px !important;
+  cursor: pointer;
+}
+
+.submenu-wrap:hover {
+  color: #D4B7B5 !important;
+  cursor: pointer;
+}
+
+.bm-item-list {
+  color: #94807F;
+  font-size: 20px;
+  margin-left: 0;
+}
+
+.service-icon {
+  width: 40%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/* .list-item:focus {
+    color: teal !important;
+  } */
+.menu-wrap {
+  display: block;
+  width: 300px;
+  position: relative;
+  margin-top: 20px;
+  right: 0;
+  padding: 0 20px;
+}
+
+.menu-heading {
+  margin: 0 !important;
+  color: #cacada;
+  font-weight: 500;
+  font-size: 1.1em;
+}
+
+.quick-contact {
+  font-size: 0.8em;
+  -webkit-filter: opacity(0.3);
+          filter: opacity(0.3);
+}
+
+.submenu-cont {
+  margin: 10px 0 !important;
+  padding: 10px 7px;
+}
+
+.v-footer {
+  margin-top: -60px;
+}
+
 @media (min-width: 1200px) {
   .hero-text {
     padding-left: 40px;
@@ -267,7 +357,7 @@ iframe {
   }
   .hero-pic-on-top {
     position: absolute;
-    bottom: -50px;
+    bottom: -20px;
     right: -2%;
     z-index: 2;
   }
@@ -282,7 +372,29 @@ iframe {
     font-size: 20vw !important;
   }
   .display-3 {
-    font-size: 14vw !important;
+    font-size: 12vw !important;
+    line-height: 50px !important;
+  }
+  iframe {
+    height: 400px;
+  }
+  .slide-card_title {
+    background-color: white;
+  }
+  .slide-card_box {
+    width: 100%;
+  }
+  .carousel {
+    width: 100%;
+    height: auto;
+  }
+  .slide {
+    margin-bottom: 25px;
+    cursor: pointer;
+    padding: 0 2px;
+  }
+  .VueCarousel-dot-container {
+    margin-top: -30px !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

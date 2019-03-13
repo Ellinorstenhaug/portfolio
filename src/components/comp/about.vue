@@ -29,8 +29,8 @@
                                 molestiae. Minus est placeat mollitia aspernatur soluta laborum velit.</p>
                             <div class="justify-center button-wrap">
                                 <!-- TODO centrera knapp-->
-                                <v-btn class="lighten-2 mt-3 px-5 py-4 about-btn" dark block large href="#">
-                                    CV & PL
+                                <v-btn class="lighten-2 mt-3 px-5 py-4 about-btn" dark block large href="#services" v-smooth-scroll>
+                                    Wanna know more? 
                                 </v-btn>
                             </div>
                         </v-flex>
