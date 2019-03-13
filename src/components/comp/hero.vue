@@ -13,7 +13,7 @@
                         <v-flex xs12 md5 xl5  class="py-5 offset-md1 hero-text">
                             <h1 class=" display-4 text-xs-left text-align-left font-weight-bold text-uppercase">{{h1}}</h1>
                             <h3 class="mb-2 display-3 text-xs-left text-align-left font-weight-medium text-uppercase">{{h3}}</h3>
-                            <v-btn class="lighten-2 mt-3 px-5 py-4 large-btn-80" dark large href="#">
+                            <v-btn class="lighten-2 mt-3 px-5 py-4 large-btn-80" dark large href="#intro" v-smooth-scroll>
                                 {{sellingButton}}
                             </v-btn>
                         </v-flex>

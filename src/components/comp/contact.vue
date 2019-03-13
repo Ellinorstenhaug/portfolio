@@ -30,14 +30,17 @@
                                     </v-list>
                                 </div>
 
-
-
-
                                 <div class="justify-center button-wrap">
                                   
-                                    <v-btn class="lighten-2 mt-3 px-5 py-4  about-btn" dark block large href="" download="CV">
+                                    <v-btn class="lighten-2 mt-3 px-5  about-btn" dark block large href="" download="CV">
                                         Contact woooop
                                     </v-btn>
+                                    <pdf src="./static/relativity.pdf"></pdf>
+
+                                <a href="https://www.arnfast-kio-konsult.se/Content/Pdf/Familjeutbildning-2-arig.pdf" 
+                                    target="_blank">familjeterapiutbildningen.</a>
+
+                          
                                 </div>
                             </v-card>
 
@@ -55,12 +58,18 @@
 
 <script>
 // import cv from '@/assets/docs/CV_Ellinor.pdf'
+   
+
+
+
 
     export default {
         components: {
+          
         },
         data: function () {
             return {
+
                 heading: "Contact",
                 subHeading: "Hey You!",
                 contactInfo: [{
@@ -85,7 +94,9 @@
                         getDocUrl(doc) {
                 return require('@/assets/docs/' + doc)
             },
+           
         },
+     
     }
 </script>
 
