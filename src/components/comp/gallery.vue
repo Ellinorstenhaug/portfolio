@@ -4,28 +4,34 @@
         </v-img>
         <div class="gallery-container gray-bg">
             <h2 class="display-4 font-weight-bold text-uppercase text-xs-right pr-5"><span>{{heading}}</span></h2>
-            <!-- <canvas id="tetris" width="240px" height="400"></canvas> -->
-
             <v-layout row wrap justify-center v-if="selectedPost" fill-height>
                 <v-flex xs12 sm6 md4 lg4 class="px-5 text-sm-right">
                     <h3 class=" text-uppercase display-1 font-weight-black">{{selectedPost.title}}</h3>
                     <div v-html="selectedPost.content"></div>
-                    <!-- <div v-html="this.selectedPost.js"></div> -->
                     <div class="justify-center button-wrap mb-5">
-                        <!-- TODO centrera knapp-->
-                        <v-btn class="lighten-2 mt-5 px-5  about-btn" dark block large :href="selectedPost.url"
-                            target="_blank">
+                        <v-btn v-if="'js' in selectedPost" @click="tet" class="main-bg lighten-2 mt-5 px-5  about-btn"
+                            block large>
+                            {{selectedPost.jsBtnText}}
+                        </v-btn>
+                        <v-btn class="lighten-2 mt-5 px-5  about-btn" dark block large :href="selectedPost.url" target="_blank">
                             {{selectedPost.btnText}}
                         </v-btn>
                     </div>
                 </v-flex>
+
                 <v-flex xs12 sm6 md5 lg5>
-                    <div class="justify-center mx-3">
+                    <div v-if="'js' in selectedPost">
+                        <div class="box elevation-2">
+                            <div class="black-box">
+                                <div v-html="selectedPost.js"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div v-else class="justify-center mx-3">
                         <v-img class="img-border elevation-2" :src="selectedPost.img" alt=""></v-img>
                     </div>
                 </v-flex>
             </v-layout>
-                        
 
             <v-layout row wrap justify-center v-else fill-height>
                 <v-flex xs12 sm6 md4 lg4 class="px-5 text-sm-right">
@@ -39,12 +45,11 @@
                 </v-flex>
                 <v-flex xs12 sm6 md5 lg5>
                     <div class="justify-center mx-3">
-                        <!-- <div v-html="posts[0].js"></div> -->
                         <v-img class="img-border elevation-2" :src="posts[0].img" alt=""></v-img>
                     </div>
                 </v-flex>
             </v-layout>
-      
+
             <v-layout column wrap class="pb-5" align-center>
                 <v-container grid-list-xl>
                     <v-layout row wrap align-center>
@@ -78,17 +83,13 @@
         Carousel,
         Slide
     } from 'vue-carousel';
-    // import tetris from './../../assets/js/tetris.js'
 
 
     export default {
         components: {
             Carousel,
             Slide,
-
-            // carousel
         },
-        // mixins: [tetris],
         data: function () {
             return {
                 heading: "Gallery",
@@ -98,8 +99,6 @@
                         title: "First project",
                         url: "https://github.com/ellinorstenhaug",
                         btnText: "See for yourself",
-                        btnId: "start",
-                        js: '<canvas id="tetris" width="240px" height="400"></canvas>',
                         img: "https://picsum.photos/400/500/?random",
                         content: '<p>Dont wait for the storm to pass, dance in the rain kick up litter decide to want nothing to do with my owner today demand to be let outside at once, and expect owner to wait for me as i think about it cat cat moo moo lick ears lick paws so make meme, make cute face but lick the other cats. Kitty poochy chase imaginary bugs, but stand in front of the computer screen. Sweet beast cat dog hate mouse eat string barf pillow no baths hate everything stare at guinea pigs. My left donut is missing, as is my right loved it, hated it, loved it, hated it scoot butt on the rug cat not kitten around</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima sunt magni, consequuntur eos cupiditate deserunt cumque debitis nesciunt dolore amet?</p>p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima sunt magni, consequuntur eos cupiditate deserunt cumque debitis nesciunt dolore amet?</p>'
                     },
@@ -107,7 +106,8 @@
                         id: 2,
                         title: "HTML & CSS",
                         url: "https://github.com/ellinorstenhaug",
-                        btnText: "Se källkod",
+
+                        btnText: "Se source code",
                         img: "https://picsum.photos/400/500?random",
                         content: '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima sunt magni, consequuntur eos cupiditate deserunt cumque debitis nesciunt dolore amet?</p><p>Dont wait for the storm to pass, dance in the rain kick up litter decide to want nothing to do with my owner today demand to be let outside at once, and expect owner to wait for me as i think about it cat cat moo moo lick ears lick paws so make meme, make cute face but lick the other cats. Kitty poochy chase imaginary bugs, but stand in front of the computer screen. Sweet beast cat dog hate mouse eat string barf pillow no baths hate everything stare at guinea pigs. My left donut is missing, as is my right loved it, hated it, loved it, hated it scoot butt on the rug cat not kitten around</p>'
                     },
@@ -115,7 +115,7 @@
                         id: 3,
                         title: "JavaScript 1",
                         url: "https://github.com/ellinorstenhaug",
-                        btnText: "Besök hemsidan",
+                        btnText: "Visit",
                         img: "https://picsum.photos/g/400/500?image=972",
                         content: '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima sunt magni, consequuntur eos cupiditate deserunt cumque debitis nesciunt dolore amet?</p><p>Dont wait for the storm to pass, dance in the rain kick up litter decide to want nothing to do with my owner today demand to be let outside at once, and expect owner to wait for me as i think about it cat cat moo moo lick ears lick paws so make meme, make cute face but lick the other cats. Kitty poochy chase imaginary bugs, but stand in front of the computer screen. Sweet beast cat dog hate mouse eat string barf pillow no baths hate everything stare at guinea pigs. My left donut is missing, as is my right loved it, hated it, loved it, hated it scoot butt on the rug cat not kitten around</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima sunt magni, consequuntur eos cupiditate deserunt cumque debitis nesciunt dolore amet?</p>'
                     },
@@ -123,32 +123,33 @@
                         id: 4,
                         title: "vue & vuetify",
                         url: "https://github.com/ellinorstenhaug",
-                        btnText: "Gå till projektet",
+                        btnText: "Go to project",
                         img: "https://picsum.photos/400/500?image=816",
                         content: '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima sunt magni, consequuntur eos cupiditate deserunt cumque debitis nesciunt dolore amet?</p><p>Dont wait for the storm to pass, dance in the rain kick up litter decide to want nothing to do with my owner today demand to be let outside at once, and expect owner to wait for me as i think about it cat cat moo moo lick ears lick paws so make meme, make cute face but lick the other cats. Kitty poochy chase imaginary bugs, but stand in front of the computer screen. Sweet beast cat dog hate mouse eat string barf pillow no baths hate everything stare at guinea pigs. My left donut is missing, as is my right loved it, hated it, loved it, hated it scoot butt on the rug cat not kitten around</p>'
                     },
                     {
                         id: 5,
-                        title: "Fifth project",
+                        title: "Tetris",
                         url: "https://github.com/ellinorstenhaug",
-                        btnText: "Gå till projektet",
-                        img: "https://picsum.photos/400/500?image=730",
+                        btnId: "start",
+                        js: '<canvas id="tetris" width="240px" height="400"></canvas>',
+                        btnText: "Se source code!",
+                        jsBtnText: "Play Tetris!",
+                        img: "https://picsum.photos/400/500?image=1073",
                         content: '<p>Dont wait for the storm to pass, dance in the rain kick up litter decide to want nothing to do with my owner today demand to be let outside at once, and expect owner to wait for me as i think about it cat cat moo moo lick ears lick paws so make meme, make cute face but lick the other cats. Kitty poochy chase imaginary bugs, but stand in front of the computer screen. Sweet beast cat dog hate mouse eat string barf pillow no baths hate everything stare at guinea pigs. My left donut is missing, as is my right loved it, hated it, loved it, hated it scoot butt on the rug cat not kitten around</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima sunt magni, consequuntur eos cupiditate deserunt cumque debitis nesciunt dolore amet?</p>'
                     },
                     {
                         id: 6,
                         title: "Best project",
                         url: "https://github.com/ellinorstenhaug",
-                        btnText: "Gå till projektet",
+                        btnText: "Visit",
                         img: "https://picsum.photos/400/500?image=544",
                         content: '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima sunt magni, consequuntur eos cupiditate deserunt cumque debitis nesciunt dolore amet?</p><p>Dont wait for the storm to pass, dance in the rain kick up litter decide to want nothing to do with my owner today demand to be let outside at once, and expect owner to wait for me as i think about it cat cat moo moo lick ears lick paws so make meme, make cute face but lick the other cats. Kitty poochy chase imaginary bugs, but stand in front of the computer screen. Sweet beast cat dog hate mouse eat string barf pillow no baths hate everything stare at guinea pigs. My left donut is missing, as is my right loved it, hated it, loved it, hated it scoot butt on the rug cat not kitten around</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima sunt magni, consequuntur eos cupiditate deserunt cumque debitis nesciunt dolore amet?</p>'
                     },
 
                 ],
                 selectedPost: null,
-
                 currentTab: 'Posts',
-                // tabs: ['Posts', 'Archive']
             }
         },
         methods: {
@@ -158,19 +159,15 @@
 
             handlePost(post) {
                 this.selectedPost = post;
-                // console.log(this.selectedPost)
                 return this.selectedPost;
             },
-           
-        },
-        computed: {
-            currentTabComponent: function () {
-                return 'tab-' + this.currentTab.toLowerCase()
+            tet() {
+                import('./../../assets/js/tetris.js')
             }
         },
+
         mounted() {
-            // import('./../../assets/js/tetris.js')
-            // tetris()
+
         }
     }
 </script>

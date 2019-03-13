@@ -47,12 +47,12 @@
         reviews: 413,
         value: 4.5,
         card: [{
-            title: "About",
+            title: "Gallery",
             url: "#about",
             img: "https://picsum.photos/400?random"
           },
           {
-            title: "Gallery",
+            title: "Services",
             url: "#gallery",
             img: "https://picsum.photos/400"
           },

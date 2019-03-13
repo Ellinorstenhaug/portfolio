@@ -19,7 +19,6 @@
                         </v-flex>
                         <v-flex xs12s sm5 md5 offset-md1 px-4>
                             <h3 class="mt-5 text-uppercase display-1 font-weight-black mb-3 ">{{heading}}</h3>
-                            <!-- TODO Gör om till data?  -->
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quod sequi magni
                                 porro maxime nulla alias perferendis dolore dolorum voluptate, quis et! Recusandae
                                 dolore explicabo eius? Eos eveniet dolorem deserunt tempore illo hic, optio ratione
@@ -28,7 +27,6 @@
                                 tempore fugiat alias voluptate veritatis iusto expedita esse nulla repudiandae
                                 molestiae. Minus est placeat mollitia aspernatur soluta laborum velit.</p>
                             <div class="justify-center button-wrap">
-                                <!-- TODO centrera knapp-->
                                 <v-btn class="lighten-2 mt-3 px-5 py-4 about-btn" dark block large href="#services" v-smooth-scroll>
                                     Wanna know more? 
                                 </v-btn>
@@ -99,7 +97,6 @@
     .block-top {
         width: 80%;
         min-height: 700px;
-        /*TODO*/
         position: relative;
         z-index: 2;
         margin: 0 auto;

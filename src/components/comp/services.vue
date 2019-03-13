@@ -32,8 +32,7 @@
             </v-layout>
         </v-container>
 
-
-    </section>
+   </section>
 </template>
 
 <script>
@@ -62,7 +61,7 @@
                         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt harum labore quidem expedita. Rem, voluptas ea quis doloribus porro cumque."
                     },
                     {
-                        title: "Vue",
+                        title: "Vue & Vuetify",
                         icon: `<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 512 512'><defs><style>.clcsk-1{fill:none;}.clcsk-2{isolation:isolate;}.clcsk-3{clip-path:url(#clip-path);}.clcsk-4{fill:#143828;}.clcsk-5{mix-blend-mode:multiply;}.clcsk-6{clip-path:url(#clip-path-4);}.clcsk-7{fill:#41b883;}.clcsk-8{fill:#35495e;}.clcsk-9{fill:#081911;}</style><clipPath id='clip-path' transform='translate(0.75 -0.45)'><rect class='clcsk-1' x='-0.75' y='0.45' width='512' height='512'/></clipPath><clipPath id='clip-path-4' transform='translate(0.75 -0.45)'><rect class='clcsk-1' x='137.25' y='155.64' width='250' height='215.62'/></clipPath></defs><title>vue</title><g class='clcsk-2'><g id='Layer_1' data-name='Layer 1'><g class='clcsk-3'><g class='clcsk-3'><g class='clcsk-3'><path class='clcsk-4' d='M255.25.45c141.39,0,256,114.62,256,256s-114.61,256-256,256-256-114.61-256-256,114.62-256,256-256' transform='translate(0.75 -0.45)'/><g class='clcsk-5'><g class='clcsk-6'><polygon points='138 155.19 262.99 370.81 388 155.19 338 155.19 262.99 284.56 187.42 155.19 138 155.19'/><polygon points='187.71 155.19 263.32 285.19 338.29 155.19 292.05 155.19 263.28 205.19 233.91 155.19 187.71 155.19'/></g></g><polygon class='clcsk-7' points='131 148.19 255.99 363.81 381 148.19 331 148.19 255.99 277.56 180.42 148.19 131 148.19'/><polygon class='clcsk-8' points='180.71 148.19 256.32 278.19 331.29 148.19 285.05 148.19 256.28 198.19 226.91 148.19 180.71 148.19'/><polygon class='clcsk-9' points='230.62 154.51 240.33 154.51 266.12 180.3 256.28 198.19 230.62 154.51'/><path class='clcsk-9' d='M255.25,364.26,374.09,483.1l19.48-11.19.05,0L380.26,148.64Z' transform='translate(0.75 -0.45)'/><path class='clcsk-9' d='M393.63,471.87A255.92,255.92,0,0,0,510.16,280.3l-.19-.2Z' transform='translate(0.75 -0.45)'/><polygon class='clcsk-9' points='506.72 275.57 510.71 279.65 510.72 279.63 381.01 148.19 394.37 471.42 394.38 471.42 510.71 279.65 506.72 275.57'/></g></g></g></g></g></svg>`,
                         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt harum labore quidem expedita. Rem, voluptas ea quis doloribus porro cumque."
                     },
@@ -164,12 +163,12 @@
                         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt harum labore quidem expedita. Rem, voluptas ea quis doloribus porro cumque."
                     },
                     {
-                        title: "Vuetify",
+                        title: "Sketch",
                         icon: `<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512"><defs><style>.clsket-1{fill:none;}.clsket-2{clip-path:url(#clip-path);}.clsket-3{fill:#2a1a59;}.clsket-4{fill:#120b30;}.clsket-5{fill:#f7f7f9;}.clsket-6{fill:#fdb300;}.clsket-10,.clsket-6,.clsket-7,.clsket-8,.clsket-9{fill-rule:evenodd;}.clsket-7{fill:#ea6c00;}.clsket-8{fill:#fdad00;}.clsket-9{fill:#fdd231;}.clsket-10{fill:#feeeb7;}</style><clipPath id="clip-path" transform="translate(-0.12 0.26)"><rect class="clsket-1" x="0.21" y="-0.26" width="512" height="512"/></clipPath></defs><title>sketch</title><g class="clsket-2"><g class="clsket-2"><path class="clsket-3" d="M257.12,368.85h0l125-145.56-54.55-73.22,175,175.21a256.53,256.53,0,0,0,9.56-69.54c0-141.39-114.62-256-256-256s-256,114.61-256,256,114.62,256,256,256A254.93,254.93,0,0,0,371,484.55Z" transform="translate(-0.12 0.26)"/><path class="clsket-4" d="M502.55,325.29,371.05,484.53a256.61,256.61,0,0,0,131.5-159.24" transform="translate(-0.12 0.26)"/><path class="clsket-5" d="M371,484.56l0,0,0,0Z" transform="translate(-0.12 0.26)"/><path class="clsket-5" d="M502.56,325.28h0Z" transform="translate(-0.12 0.26)"/><path class="clsket-4" d="M327.57,150.07l54.55,73.22-125,145.56L371,484.55l0,0,131.5-159.24h0Z" transform="translate(-0.12 0.26)"/><polygon class="clsket-6" points="186.54 150.33 257 142.88 327.45 150.33 382 223.55 257 369.12 132 223.55 186.54 150.33"/><polygon class="clsket-7" points="182.63 223.55 257 369.12 132 223.55 182.63 223.55"/><polygon class="clsket-7" points="331.37 223.55 257 369.12 382 223.55 331.37 223.55"/><polygon class="clsket-8" points="182.63 223.55 331.37 223.55 257 369.12 182.63 223.55"/><polygon class="clsket-9" points="257 142.88 186.54 150.33 182.63 223.56 257 142.88"/><polygon class="clsket-9" points="257 142.88 327.45 150.33 331.37 223.56 257 142.88"/><polygon class="clsket-8" points="382 223.55 327.45 150.33 331.37 223.55 382 223.55"/><polygon class="clsket-8" points="132 223.55 186.54 150.33 182.63 223.55 132 223.55"/><polygon class="clsket-10" points="257 142.88 182.63 223.56 331.37 223.56 257 142.88"/></g></g></svg>`,
                         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt harum labore quidem expedita. Rem, voluptas ea quis doloribus porro cumque."
                     },
                     {
-                        title: "Illustrator",
+                        title: "Sass",
                         icon: `<?xml version="1.0" encoding="iso-8859-1"?>
 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"

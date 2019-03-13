@@ -32,7 +32,6 @@
 
             
                                 <div class="justify-center button-wrap">
-                                    <!-- TODO centrera knapp-->
                                     <v-btn class="lighten-2 mt-3 px-5 py-4  about-btn" dark block large href="#">
                                         Contact woooop
                                     </v-btn>
@@ -43,7 +42,6 @@
                         <v-flex xs12 sm6 md6 lg6>
                             <div class="justify-center mx-3 fill-height elevation-2">
                                 <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2034.2613400341502!2d18.02120511623268!3d59.34528528166437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d9ccfa13c0f%3A0xfe490cdfcc1acf9c!2sHagalund%2C+171+65+Solna!5e0!3m2!1ssv!2sse!4v1552228517681"></iframe>
-                                <!-- <v-img class="img-border elevation-2" :src="currentImg" alt=""></v-img> -->
                             </div>
                         </v-flex>
                     </v-layout>
@@ -58,7 +56,6 @@
             return {
                 heading: "Contact",
                 subHeading: "Hey You!",
-                currentImg: "https://picsum.photos/400/400?random",
                 contactInfo: [{
                         icon: "phone",
                         text: "0736504717",
