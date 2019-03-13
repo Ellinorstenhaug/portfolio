@@ -30,9 +30,12 @@
                                     </v-list>
                                 </div>
 
-            
+<pdf src="@assets/docs/CV_Ellinor.pdf"></pdf>
+
+
                                 <div class="justify-center button-wrap">
-                                    <v-btn class="lighten-2 mt-3 px-5 py-4  about-btn" dark block large href="#">
+                                  
+                                    <v-btn class="lighten-2 mt-3 px-5 py-4  about-btn" dark block large href="" download="CV">
                                         Contact woooop
                                     </v-btn>
                                 </div>
@@ -51,7 +54,13 @@
 </template>
 
 <script>
+import pdf from 'vue-pdf'
+import cv from '@/assets/docs/CV_Ellinor.pdf'
+
     export default {
+        components: {
+            pdf
+        },
         data: function () {
             return {
                 heading: "Contact",
@@ -75,8 +84,8 @@
             }
         },
         methods: {
-            getImgUrl(img) {
-                return require('@/assets/images/' + img)
+                        getDocUrl(doc) {
+                return require('@/assets/docs/' + doc)
             },
         },
     }
