@@ -32,15 +32,10 @@
 
                                 <div class="justify-center button-wrap">
                                   
-                                    <v-btn class="lighten-2 mt-3 px-5  about-btn" dark block large href="" download="CV">
+                                    <v-btn class="lighten-2 mt-3 px-5  about-btn" dark block large href="https://www.ellinorstenhaug.com/cv_ellinor.pdf" target="_blank">
                                         Contact woooop
                                     </v-btn>
-                                    <pdf src="./static/relativity.pdf"></pdf>
 
-                                <a href="https://www.arnfast-kio-konsult.se/Content/Pdf/Familjeutbildning-2-arig.pdf" 
-                                    target="_blank">familjeterapiutbildningen.</a>
-
-                          
                                 </div>
                             </v-card>
 
