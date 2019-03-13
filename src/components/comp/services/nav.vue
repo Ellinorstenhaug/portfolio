@@ -1,13 +1,11 @@
 <template>
   <div class="white-nav">
-
     <div class="toolbar-wrapper">
       <v-card color="white lighten-4" flat>
         <Slide class="hidden-md-and-up">
           <div class="menu-wrap">
             <div class="submenu-cont">
-
-              <v-btn  :href="link.url" v-smooth-scroll  flat block class="submenu-wrap title font-weight-regular text-xs-left" v-for="(link, i) in links" :key="i">
+              <v-btn :href="link.url" v-smooth-scroll flat block class="submenu-wrap title font-weight-regular text-xs-left" v-for="(link, i) in links" :key="i">
                 <span class="mr-2 text-uppercase">{{link.title}}</span>
               </v-btn>
             </div>
@@ -23,16 +21,13 @@
       </v-card>
     </div>
 
-
     <v-toolbar app color="white" flat class="top">
       <v-toolbar-items class="hidden-sm-and-down">
         <v-btn flat :href="link.url" v-smooth-scroll v-for="(link, i) in links" :key="i">
           <span class="mr-2 text-uppercase">{{link.title}}</span>
         </v-btn>
       </v-toolbar-items>
-
       <v-spacer></v-spacer>
-
       <v-toolbar-title class="headline text-uppercase">
         <v-btn flat large href="#" v-smooth-scroll class="nav-btn">
           <span>Ellinor</span>
@@ -54,10 +49,6 @@
           <span class="mr-2" v-html="icon.icon">
           </span>
         </v-btn>
-
-
-
-
       </v-toolbar-items>
     </v-toolbar>
   </div>
