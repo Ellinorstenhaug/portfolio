@@ -33,7 +33,7 @@
                                 <div class="justify-center button-wrap">
                                   
                                     <v-btn class="lighten-2 mt-3 px-5  about-btn" dark block large href="https://www.ellinorstenhaug.com/cv_ellinor.pdf" target="_blank">
-                                        Contact woooop
+                                        View CV as PDF
                                     </v-btn>
 
                                 </div>
