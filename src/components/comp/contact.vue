@@ -30,7 +30,7 @@
                                     </v-list>
                                 </div>
 
-<pdf src="@assets/docs/CV_Ellinor.pdf"></pdf>
+
 
 
                                 <div class="justify-center button-wrap">
@@ -54,12 +54,10 @@
 </template>
 
 <script>
-import pdf from 'vue-pdf'
-import cv from '@/assets/docs/CV_Ellinor.pdf'
+// import cv from '@/assets/docs/CV_Ellinor.pdf'
 
     export default {
         components: {
-            pdf
         },
         data: function () {
             return {
