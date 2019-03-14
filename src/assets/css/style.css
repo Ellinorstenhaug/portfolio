@@ -258,9 +258,9 @@ iframe {
 .bm-menu {
   z-index: 1001;
   padding: 0 !important;
-  background-color: #e9e7e7;
-  -webkit-box-shadow: 0 0 10px rgba(148, 128, 127, 0.582);
-          box-shadow: 0 0 10px rgba(148, 128, 127, 0.582);
+  background-color: #e9e7e7 !important;
+  -webkit-box-shadow: 0 0 10px rgba(148, 128, 127, 0.582) !important;
+          box-shadow: 0 0 10px rgba(148, 128, 127, 0.582) !important;
 }
 
 .bm-burger-button {
