@@ -256,7 +256,7 @@ iframe {
 }
 
 .bm-menu {
-  z-index: 1001;
+  z-index: 1001 !important;
   padding: 0 !important;
   background-color: #e9e7e7 !important;
   -webkit-box-shadow: 0 0 10px rgba(148, 128, 127, 0.582) !important;
@@ -297,12 +297,12 @@ iframe {
     color: teal !important;
   } */
 .menu-wrap {
-  display: block;
+  display: block !important;
   width: 300px;
-  position: relative;
-  margin-top: 20px;
-  right: 0;
-  padding: 0 20px;
+  position: relative !important;
+  margin-top: 20px !important;
+  right: 0 !important;
+  padding: 0 20px !important;
 }
 
 .menu-heading {

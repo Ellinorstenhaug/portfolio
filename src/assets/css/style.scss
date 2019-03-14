@@ -282,7 +282,7 @@ iframe {
 }
 
 .bm-menu {
-    z-index: 1001;
+    z-index: 1001 !important;
     padding: 0 !important;
     background-color: $gray-color !important;
     box-shadow: 0 0 10px $main-color-dark-trans !important;
@@ -329,13 +329,12 @@ iframe {
   } */
 
 .menu-wrap {
-    display: block;
+    display: block !important;
     width: 300px;
-    position: relative;
-    margin-top: 20px;
-    right: 0;
-    padding: 0 20px;
-
+    position: relative !important;
+    margin-top: 20px !important;
+    right: 0 !important;
+    padding: 0 20px !important;
     // text-align: center;
 }
 
