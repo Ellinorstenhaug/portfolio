@@ -52,9 +52,7 @@
 </script>
 
 <style>
-    .button-wrap {
-        width: 100%;
-    }
+  
 
 
     .rotate-text h3 {

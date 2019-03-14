@@ -1,12 +1,4 @@
 @charset "UTF-8";
-#app > div > main > div > div > section:nth-child(4) > div > div.gallery-container.gray-bg > div > section > div > div > div > div > section > div.VueCarousel-wrapper > div > div {
-  padding: 10px;
-}
-
-.paginationColor {
-  background-color: fuchsia;
-}
-
 /*Generellt*/
 .link {
   text-decoration: none;
@@ -79,6 +71,10 @@ iframe {
   background-color: #e9e7e7;
 }
 
+.button-wrap {
+  width: 100%;
+}
+
 .slide-card_title {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -126,6 +122,10 @@ iframe {
 
 .VueCarousel-dot--active {
   background-color: black !important;
+}
+
+#app > div > main > div > div > section:nth-child(4) > div > div.gallery-container.gray-bg > div > section > div > div > div > div > section > div.VueCarousel-wrapper > div > div {
+  padding: 10px;
 }
 
 /*Hero*/

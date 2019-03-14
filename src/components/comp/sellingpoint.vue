@@ -4,7 +4,7 @@
             <v-layout align-center justify-center row>
                 <v-flex class="md6 justify-center text-xs-center">
                     <div class="display-3 font-weight-bold white--text mb-3">Någon text här va</div>
-                    <v-btn class=" mt-5 py-4 large-btn-60 main-dark-bg" dark color="#D4B7B5" large href="/pre-made-themes">
+                    <v-btn class=" mt-5 py-4 large-btn-60 main-dark-bg" dark color="#D4B7B5" large href="/">
                         Let's talk!
                     </v-btn>
                 </v-flex>

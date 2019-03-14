@@ -7,20 +7,6 @@ $main-color-dark-trans: rgba(148, 128, 127, 0.582);
 $dark-color:#544948;
 $gray-color: #e9e7e7;
 
-
-#app>div>main>div>div>section:nth-child(4)>div>div.gallery-container.gray-bg>div>section>div>div>div>div>section>div.VueCarousel-wrapper>div>div {
-    padding: 10px;
-}
-
-// #app > div > main > div > div > section:nth-child(4) > div > div.gallery-container.gray-bg > div > section > div > div > div > div > section > div.VueCarousel-pagination > div > button {
-//     background-color:rebeccapurple !important;
-// }
-
-.paginationColor {
-    background-color: fuchsia;
-}
-
-
 /*Generellt*/
 .link {
     text-decoration: none;
@@ -95,6 +81,15 @@ iframe {
     background-color: $gray-color;
 }
 
+
+// ÖVrigt
+.button-wrap {
+    width: 100%;
+}
+
+
+
+
 // carousel 
 .slide-card_title {
     justify-content: center;
@@ -143,6 +138,15 @@ iframe {
 .VueCarousel-dot--active {
     background-color: black !important;
 }
+
+
+#app>div>main>div>div>section:nth-child(4)>div>div.gallery-container.gray-bg>div>section>div>div>div>div>section>div.VueCarousel-wrapper>div>div {
+    padding: 10px;
+}
+
+// .paginationColor {
+//     background-color: fuchsia;
+// }
 
 
 /*Hero*/
