@@ -284,7 +284,7 @@ iframe {
 .bm-item-list {
   color: #94807F;
   font-size: 20px;
-  margin-left: 0;
+  margin-left: 0 !important;
 }
 
 .service-icon {
